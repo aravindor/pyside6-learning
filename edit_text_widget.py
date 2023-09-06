@@ -1,0 +1,38 @@
+from PySide6 import QtWidgets
+
+
+class EditTextWidget(QtWidgets.QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Edit text demo")
+        self.text_edit = QtWidgets.QTextEdit()
+        copy_button = QtWidgets.QPushButton("Copy")
+        cut_button = QtWidgets.QPushButton("Cut")
+        paste_button = QtWidgets.QPushButton("Paste")
+        undo_button = QtWidgets.QPushButton("Undo")
+        redo_button = QtWidgets.QPushButton("Redo")
+        set_plain_text_button = QtWidgets.QPushButton("Set plain text")
+        set_html_button = QtWidgets.QPushButton("Set plain text")
+        clear_button = QtWidgets.QPushButton("Clear")
+        h_layout = QtWidgets.QHBoxLayout()
+        h_layout.addWidget(copy_button)
+        h_layout.addWidget(cut_button)
+        h_layout.addWidget(paste_button)
+        h_layout.addWidget(undo_button)
+        h_layout.addWidget(redo_button)
+        h_layout.addWidget(set_plain_text_button)
+        h_layout.addWidget(set_html_button)
+        h_layout.addWidget(clear_button)
+        v_layout = QtWidgets.QVBoxLayout()
+        v_layout.addLayout(h_layout)
+        v_layout.addWidget(self.text_edit)
+        self.setLayout(v_layout)
+
+        copy_button.clicked.connect(self.text_edit.copy)
+        cut_button.clicked.connect(self.text_edit.cut)
+        paste_button.clicked.connect(self.text_edit.paste)
+        undo_button.clicked.connect(self.text_edit.undo)
+        redo_button.clicked.connect(self.text_edit.redo)
+        set_plain_text_button.clicked.connect(self.text_edit.setPlainText)
+        set_html_button.clicked.connect(self.text_edit.setHtml)
+        clear_button.clicked.connect(self.text_edit.clear)
