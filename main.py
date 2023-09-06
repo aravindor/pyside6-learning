@@ -2,6 +2,7 @@ from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QMainWindow
 import sys
 
 from button_holder import ButtonHolder
+from line_edit_widget import LineEditWidget
 from main_window import MainWindow
 from message_window import MessageWidget
 from rock_widget import RockWidget
@@ -17,6 +18,9 @@ app = QApplication(sys.argv)
 # main_window = MainWindow()
 # main_window.show()
 
-message_widget = MessageWidget()
-message_widget.show()
+# message_widget = MessageWidget()
+# message_widget.show()
+
+line_edit_widget = LineEditWidget()
+line_edit_widget.show()
 app.exec()
