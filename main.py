@@ -10,6 +10,7 @@ from main_window import MainWindow
 from message_window import MessageWidget
 from rock_widget import RockWidget
 from slider_holder import SliderHolder
+from tab_layout import TabWidget
 
 app = QApplication(sys.argv)
 # button_holder = ButtonHolder()
@@ -30,6 +31,9 @@ app = QApplication(sys.argv)
 # text_edit_widget.show()
 # grid_layout_widget = GridLayoutWidget()
 # grid_layout_widget.show()
-checkbox_widget = CheckBoxWidget()
-checkbox_widget.show()
+# checkbox_widget = CheckBoxWidget()
+# checkbox_widget.show()
+
+tab_widget = TabWidget()
+tab_widget.show()
 app.exec()
