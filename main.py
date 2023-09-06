@@ -3,6 +3,7 @@ import sys
 
 from button_holder import ButtonHolder
 from check_box import CheckBoxWidget
+from combo_box import ComboBoxWidget
 from edit_text_widget import EditTextWidget
 from grid_layout import GridLayoutWidget
 from line_edit_widget import LineEditWidget
@@ -34,6 +35,9 @@ app = QApplication(sys.argv)
 # checkbox_widget = CheckBoxWidget()
 # checkbox_widget.show()
 
-tab_widget = TabWidget()
-tab_widget.show()
+# tab_widget = TabWidget()
+# tab_widget.show()
+
+combo_box_widget = ComboBoxWidget()
+combo_box_widget.show()
 app.exec()
