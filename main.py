@@ -9,6 +9,7 @@ from grid_layout import GridLayoutWidget
 from line_edit_widget import LineEditWidget
 from main_window import MainWindow
 from message_window import MessageWidget
+from q_loader_as_q_object import UserInterFace
 from qt_loader import get_qt_loader
 from rock_widget import RockWidget
 from slider_holder import SliderHolder
@@ -41,6 +42,8 @@ app = QApplication(sys.argv)
 
 # combo_box_widget = ComboBoxWidget()
 # combo_box_widget.show()
-qt_window = get_qt_loader()
-qt_window.show()
+# qt_window = get_qt_loader()
+# qt_window.show()
+# window = UserInterFace()
+# window.show()
 app.exec()
