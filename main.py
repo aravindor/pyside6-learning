@@ -9,11 +9,13 @@ from grid_layout import GridLayoutWidget
 from line_edit_widget import LineEditWidget
 from main_window import MainWindow
 from message_window import MessageWidget
+from plus_minus_form import PlusMinusForm
 from q_loader_as_q_object import UserInterFace
 from qt_loader import get_qt_loader
 from rock_widget import RockWidget
 from slider_holder import SliderHolder
 from tab_layout import TabWidget
+from ui.widget import Widget
 
 app = QApplication(sys.argv)
 # button_holder = ButtonHolder()
@@ -46,4 +48,10 @@ app = QApplication(sys.argv)
 # qt_window.show()
 # window = UserInterFace()
 # window.show()
+
+# widget = Widget()
+# widget.show()
+
+widget = PlusMinusForm()
+widget.show()
 app.exec()
