@@ -4,6 +4,7 @@ import sys
 from button_holder import ButtonHolder
 from check_box import CheckBoxWidget
 from combo_box import ComboBoxWidget
+from dialogs.ui.widget import SimpleInputDialog
 from edit_text_widget import EditTextWidget
 from grid_layout import GridLayoutWidget
 from line_edit_widget import LineEditWidget
@@ -56,6 +57,9 @@ app = QApplication(sys.argv)
 # widget = PlusMinusForm()
 # widget.show()
 
-window = MainWindow()
-window.show()
+# window = MainWindow()
+# window.show()
+
+dialog = SimpleInputDialog()
+dialog.show()
 app.exec()
