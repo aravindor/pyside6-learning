@@ -4,6 +4,8 @@ import sys
 from button_holder import ButtonHolder
 from check_box import CheckBoxWidget
 from combo_box import ComboBoxWidget
+from dialogs.file_dialog.file_picker import FilePicker
+from dialogs.font_dialog.font_dialog_ui import FontDialog
 from dialogs.ui.widget import SimpleInputDialog
 from edit_text_widget import EditTextWidget
 from grid_layout import GridLayoutWidget
@@ -15,6 +17,7 @@ from q_loader_as_q_object import UserInterFace
 from qt_loader import get_qt_loader
 from rock_widget import RockWidget
 from slider_holder import SliderHolder
+from styles.widget import StyledWidget
 from tab_layout import TabWidget
 from ui.widget import Widget
 from window.main_window import MainWindow
@@ -60,6 +63,13 @@ app = QApplication(sys.argv)
 # window = MainWindow()
 # window.show()
 
-dialog = SimpleInputDialog()
-dialog.show()
+# dialog = SimpleInputDialog()
+# dialog.show()
+# widget = FilePicker()
+# widget.show()
+# widget = FontDialog()
+# widget.show()
+app.setStyle("Fusion")
+widget = StyledWidget()
+widget.show()
 app.exec()
