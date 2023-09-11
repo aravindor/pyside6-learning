@@ -10,15 +10,18 @@ from dialogs.ui.widget import SimpleInputDialog
 from edit_text_widget import EditTextWidget
 from grid_layout import GridLayoutWidget
 from line_edit_widget import LineEditWidget
+from list_widget.widget import ListWidget
 # from main_window import MainWindow
 from message_window import MessageWidget
 from plus_minus_form import PlusMinusForm
 from q_loader_as_q_object import UserInterFace
 from qt_loader import get_qt_loader
 from rock_widget import RockWidget
+from settings.settings import Settings
 from slider_holder import SliderHolder
 from styles.widget import StyledWidget
 from tab_layout import TabWidget
+from table_model.widget import TableWidget
 from ui.widget import Widget
 from window.main_window import MainWindow
 
@@ -69,7 +72,14 @@ app = QApplication(sys.argv)
 # widget.show()
 # widget = FontDialog()
 # widget.show()
-app.setStyle("Fusion")
-widget = StyledWidget()
+# app.setStyle("Fusion")
+# widget = StyledWidget()
+# widget.show()
+
+# widget = Settings()
+# widget.show()
+# widget = ListWidget()
+# widget.show()
+widget = TableWidget()
 widget.show()
 app.exec()
